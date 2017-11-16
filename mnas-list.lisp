@@ -33,3 +33,13 @@
     rez))
 
 	 
+(defun list-string-sequence (lst)
+  "Введено для использования с пакетом LTK.
+Пример использования:
+;;;; (list-string-sequence '(1 2 3 4 5 6 \"sdf\" 23.5))
+;;;; => \"1 2 3 4 5 6 \"sdf\" 23.5\"
+;;;; (configure combo :values (list-string-sequence '(1 2 3 4 5 \"Foo\" 2.45)))
+"
+  (string-right-trim ")" (string-left-trim "(" (format nil "~S" lst))))
+
+

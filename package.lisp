@@ -2,5 +2,7 @@
 
 (defpackage #:mnas-list
   (:use #:cl)
-  (:export unique))
+  (:export unique)
+  (:export list-string-sequence)
+  )
 
